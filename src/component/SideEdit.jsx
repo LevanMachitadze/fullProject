@@ -2,19 +2,17 @@ import React from "react";
 
 const SideEdit = () => {
   return (
-    <div className='w-[719px] h-screen  pl-[159px] pt-[59px] pr-[56px] pb-[32px]'>
-      <div className='flex flex-col '>
+    <div className='w-[719px] h-screen pl-[159px] pt-[59px] pr-[56px] pb-[32px] overflow-y-auto'>
+      <div className='flex flex-col'>
         <div className='mb-[46px]'>
-          <h1 className='text-[#0C0E16] text-[24px] font-bold  '>
-            Edit #XM9141
-          </h1>
+          <h1 className='text-[#0C0E16] text-[24px] font-bold'>Edit #XM9141</h1>
         </div>
         <div>
           <p className='text-[#7C5DFA] font-bold mb-[24px]'>Bill From</p>
-          <p className='text-[#7E88C3] font-medium mb-[9px]'>Street Adress</p>
+          <p className='text-[#7E88C3] font-medium mb-[9px]'>Street Address</p>
           <input
             type='text'
-            placeholder='19 Union Terrance'
+            placeholder='19 Union Terrace'
             className='w-[504px] h-[48px] border border-[#DFE3FA] rounded mb-[25px]'
           />
           <div className='flex flex-row mb-[49px]'>
@@ -23,7 +21,7 @@ const SideEdit = () => {
               <input
                 type='text'
                 placeholder='London'
-                className='w-[152px] h-[48px]  border border-[#DFE3FA] rounded mb-[25px]'
+                className='w-[152px] h-[48px] border border-[#DFE3FA] rounded mb-[25px]'
               />
             </div>
             <div>
@@ -60,10 +58,10 @@ const SideEdit = () => {
             placeholder='Alexgrim@gmail.com'
             className='w-[504px] h-[48px] border border-[#DFE3FA] rounded mb-[25px]'
           />
-          <p className='text-[#7E88C3] font-medium mb-[9px]'>Street Adress</p>
+          <p className='text-[#7E88C3] font-medium mb-[9px]'>Street Address</p>
           <input
             type='text'
-            placeholder='84 Church way'
+            placeholder='84 Church Way'
             className='w-[504px] h-[48px] border border-[#DFE3FA] rounded mb-[25px]'
           />
           <div className='flex flex-row mb-[49px]'>
@@ -71,8 +69,8 @@ const SideEdit = () => {
               <p className='text-[#7E88C3] font-medium mb-[9px]'>City</p>
               <input
                 type='text'
-                placeholder='BradFord'
-                className='w-[152px] h-[48px]  border border-[#DFE3FA] rounded mb-[25px]'
+                placeholder='Bradford'
+                className='w-[152px] h-[48px] border border-[#DFE3FA] rounded mb-[25px]'
               />
             </div>
             <div>
