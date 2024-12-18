@@ -12,6 +12,7 @@ const Invoices = () => {
     }, 1000);
   }, []);
 
+<<<<<<< Updated upstream
   const getStatusClasses = (status) => {
     if (status.toLowerCase() === 'paid') return 'bg-green-100 text-green-500';
     if (status.toLowerCase() === 'pending')
@@ -67,6 +68,16 @@ const Invoices = () => {
 
               <div className='text-purple-500 font-bold'>›</div>
             </div>
+=======
+  return (
+    <>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <div>
+          {invoces.map((invoce, index) => (
+            <div key={index}>{invoce.city}</div>
+>>>>>>> Stashed changes
           ))}
         </div>
       )}
