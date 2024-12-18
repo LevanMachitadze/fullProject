@@ -7,7 +7,7 @@ import EmptyBanner from './component/EmptyBanner';
 import { useState } from 'react';
 
 function App() {
-  const [isInvoces, setIsInvoces] = useState(false);
+  const [isInvoces, setIsInvoces] = useState(true);
   return (
     <>
       <div className='relative w-full'>
