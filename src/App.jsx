@@ -7,9 +7,9 @@ import SideAdd from './component/SideAdd';
 function App() {
   return (
     <>
-      <div className='flex justify-between'>
-        <div>{<SideBar />}</div>
-        <div>
+      <div className='relative w-full'>
+        <div className='fixed left-0 top-0'>{<SideBar />}</div>
+        <div className='m-auto w-[60%]'>
           <header className='mb-7'>{<Header />}</header>
           <main>{<Invoices />}</main>
         </div>
