@@ -1,7 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const SideAdd = () => {
-  return <div>SideAdd</div>;
+  const { id } = useParams();
+
+  return (
+    <div>
+      <h1>Edit Invoice #{id}</h1>
+    </div>
+  );
 };
 
 export default SideAdd;
