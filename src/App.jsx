@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './App.css';
 import Header from './component/Header';
@@ -9,6 +10,7 @@ import AddInvoice from './component/SideAdd';
 
 const App = () => {
   const [isInvoices, setIsInvoices] = useState(true);
+
 
   return (
     <Router>
@@ -23,6 +25,18 @@ const App = () => {
               <Route path='/empty' element={<EmptyBanner />} />
             </Routes>
           </main>
+
+function App() {
+  const [isInvoces, setIsInvoces] = useState(true);
+  return (
+    <>
+
+      <div className="relative w-full">
+        <div className="fixed left-0 top-0">{<SideBar />}</div>
+        <div className="m-auto w-[60%]">
+          <header className="mb-7">{<Header />}</header>
+          <main>{<Invoices />}</main>
+
         </div>
       </div>
     </Router>
