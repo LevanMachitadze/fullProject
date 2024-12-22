@@ -19,6 +19,17 @@ const Invoices = () => {
 
     fetchInvoices();
   }, []);
+  const handleMarkAsPaid = () => {
+    if (selectedInvoice) {
+      const updatedInvoices = invoices.map((invoice) =>
+        invoice.id === selectedInvoice.id
+          ? { ...invoice, status: 'paid' }
+          : invoice
+      );
+      setInvoices(updatedInvoices);
+      setSelectedInvoice({ ...selectedInvoice, status: 'paid' });
+    }
+  };
 
   const getStatusClasses = (status) => {
     if (status.toLowerCase() === 'paid') return 'bg-green-100 text-green-500';
@@ -99,7 +110,10 @@ const Invoices = () => {
                   >
                     Delete
                   </button>
-                  <button className='px-4 py-2 text-white bg-purple-500 rounded-full font-bold hover:bg-purple-600'>
+                  <button
+                    onClick={handleMarkAsPaid}
+                    className='px-4 py-2 text-white bg-purple-500 rounded-full font-bold hover:bg-purple-600'
+                  >
                     Mark as Paid
                   </button>
                 </div>
@@ -211,7 +225,6 @@ const Invoices = () => {
         </div>
       )}
 
-      {/* Delete Modal */}
       {deleteAlert && (
         <div className='fixed inset-0 bg-black bg-opacity-50 z-10 flex justify-center items-center'>
           <div className='bg-white p-6 rounded-lg shadow-lg z-20 w-[400px]'>
