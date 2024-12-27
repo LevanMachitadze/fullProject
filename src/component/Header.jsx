@@ -17,16 +17,14 @@ const Header = ({ arrayLength, setFilterStatus }) => {
   const handleCheckboxChange = (status) => {
     const newStatus = { ...checkedStatus, [status]: !checkedStatus[status] };
 
-    // Ensure only one checkbox is selected at a time
     Object.keys(newStatus).forEach((key) => {
       newStatus[key] = key === status ? !checkedStatus[status] : false;
     });
 
     setCheckedStatus(newStatus);
 
-    // Set the filter status based on the checkbox selection
     const activeStatus = Object.keys(newStatus).find((key) => newStatus[key]);
-    setFilterStatus(activeStatus || null); // If no checkbox is selected, clear the filter
+    setFilterStatus(activeStatus || null);
   };
 
   return (
