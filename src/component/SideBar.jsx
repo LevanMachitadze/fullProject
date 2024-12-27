@@ -2,7 +2,7 @@ import React from 'react';
 import Moon from '../assets/svg/Moon.svg';
 import SidebarLogo from '../assets/svg/SidebarLogo.svg';
 import SideBarMen from '../assets/svg/SideBarMen.svg';
-import SideBarCircle from '../assets/svg/SidebarCircle.svg';
+import SideBarCircle from '../assets/svg/SideBarCircle.svg';
 
 const SideBar = ({ isLight, setIsLight }) => {
   const handleLightClick = () => {
