@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './component/Header';
-import SideBar from './component/sideBar';
+import SideBar from './component/SideBar';
 import EmptyBanner from './component/EmptyBanner';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Invoices from './component/Invoices';
