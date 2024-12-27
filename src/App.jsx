@@ -21,7 +21,7 @@ const App = () => {
         <div className="xl:fixed xl:left-0 w-full xl:w-4 xl:max-w-[1280px] xl:top-0 fixed left-0 top-0">
           <SideBar isLight={isLight} setIsLight={setIsLight} />
         </div>
-        <div className="m-auto w-[60%] mt-28 xl:mt-0">
+        <div className="m-auto w-[60%] mt-[80px] xl:mt-0">
           <header className="mb-7">
             <Header isLight={isLight} setFilterStatus={setFilterStatus} />
           </header>

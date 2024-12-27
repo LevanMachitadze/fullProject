@@ -56,7 +56,7 @@ const Header = ({ isLight, setFilterStatus }) => {
                 isLight ? "bg-white" : "bg-[#373B53]"
               } w-[192px] h-[128px] mt-6 shadow-lg rounded-md flex flex-col`}
             >
-              {!checkedStatus.pending && !checkedStatus.completed && (
+              {!checkedStatus.pending && !checkedStatus.paid && (
                 <label
                   className={`p-2 items-center justify-start flex ${
                     isLight ? "text-[#0C0E16]" : "text-[#DFE3FA]"
@@ -71,7 +71,7 @@ const Header = ({ isLight, setFilterStatus }) => {
                   Draft
                 </label>
               )}
-              {!checkedStatus.draft && !checkedStatus.completed && (
+              {!checkedStatus.draft && !checkedStatus.paid && (
                 <label
                   className={`p-2 items-center justify-start flex ${
                     isLight ? "text-[#0C0E16]" : "text-[#DFE3FA]"
@@ -95,7 +95,7 @@ const Header = ({ isLight, setFilterStatus }) => {
                   <input
                     type="checkbox"
                     className="mr-2"
-                    checked={checkedStatus.completed}
+                    checked={checkedStatus.paid}
                     onChange={() => handleCheckboxChange("paid")}
                   />
                   Completed
